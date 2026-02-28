@@ -222,7 +222,7 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  --background-color: rgba(0, 0, 0, 0);
+  --background-color: #000000;
   --default-color: #ffffff;
   --heading-color: #ffffff;
   color: var(--default-color);
@@ -234,11 +234,17 @@ h6 {
 
 .header .logo {
   line-height: 1;
+  gap: 10px;
 }
 
 .header .logo img {
-  max-height: 36px;
-  margin-right: 8px;
+  width: 58px;
+  height: 58px;
+  margin-right: 0;
+  object-fit: cover;
+  object-position: center;
+  clip-path: inset(18% round 10px);
+  filter: drop-shadow(0 0 10px rgba(255, 166, 0, 0.35));
 }
 
 .header .logo h1 {
@@ -272,6 +278,11 @@ h6 {
     order: 1;
   }
 
+  .header .logo img {
+    width: 50px;
+    height: 50px;
+  }
+
   .header .cta-btn {
     order: 2;
     margin: 0 15px 0 0;
@@ -290,7 +301,7 @@ h6 {
 /* Global Header on Scroll
 ------------------------------*/
 .scrolled .header {
-  --background-color: rgba(21, 34, 43, 0.85);
+  --background-color: #000000;
 }
 
 /*--------------------------------------------------------------
